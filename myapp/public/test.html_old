@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8" />
+        <title>Документ без названия</title>
+  </head>
+ <body bgcolor="d5713f">
+ <table border="1" bordercolor="cc215a" width="800" align="center"> 
+ <tr> 
+ <td bgcolor="e6e6fa"> 
+ <!--Шапка сайта.-->
+
+ <table border="1" bordercolor="cc215a" width="790" height="200"
+ cellpadding="10"> 
+ <tr> 
+ <th background="http://trueimages.ru/img/74/53/c9e1d3aa82a2031988b981cecd3.png"> 
+
+ <h1><font color="cc215a" face="Monotype Corsiva"> Мой тестовый сайт</font>
+ 	<h3 align="left"> 
+ 	<font color="cc215a"><font size=+2>Описание сайта </font></font>
+ 	</h3> 
+ </h1> 
+
+ </th> 
+ </tr> 
+ </table> 
+ <!--Текст статьи--> 
+ <table border="1" bordercolor="cc215a" width="790" cellpadding="10"> 
+ <tr> 
+ <td rowspan="4" width="600" bgcolor="e6e6fa"> 
+
+ <h3 align="center"> Название статьи</h3> 
+ <p style="text-indent:20px"><span style = "font-size: 30px;">
+	 <font face="Monotype Corsiva"> <font color="cc215a">
+	<strong>Здравствуйте уважаемые</strong></font></font></span> 
+</p>
+
+<br>test        sssssssssssssssssв несколько раз быстрее
+
+ </td> 
+ <!--Сайдбар--> 
+ <td bgcolor="e6e6fa" align="left"> 
+ <h3>Меню</h3> 
+ <p><img src="http://trueimages.ru/img/31/ab/4dcb087c2ae4305edcd15171696.jpg">
+Другая страница</p> 
+ <p><img src="http://trueimages.ru/img/31/ab/4dcb087c2ae4305edcd15171696.jpg">
+Другая страница</p> 
+ </td> 
+ </tr> 
+ <tr> 
+ <td bgcolor="e6e6fa" align="center"> 
+ <h3>Дополнительная информация</h3> 
+ <p align="left">Текст дополнительной информации</p> 
+ </td> 
+ </td> 
+ </tr> 
+ </tr> 
+ </table> 
+ </table> 
+ </body> 
+ </html>

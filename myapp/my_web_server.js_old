@@ -1,0 +1,33 @@
+//var express = require('express'),
+//    app = express();
+
+//var log = require('winston');
+
+//app.use(express.static(__dirname + '/public'));
+
+//app.listen(8080);
+
+var http = require('http');
+
+var server = http.createServer().listen(8080);
+
+console.log("Server is running on port 8080 !!!")
+
+
+server.on('request', function(req, res){
+   if(req.url == '/stop'){
+      server.close();
+   }else{
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end('Hello World\n');
+  }
+});
+
+server.on('request', function(req, res){
+    console.log('Request: ', req.method, req.url);
+    console.log('STATUS: ', res.statusCode);
+});
+
+server.on('close', function(){
+    console.log('Server is closing!');
+});
