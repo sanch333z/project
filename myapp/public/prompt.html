@@ -2,21 +2,46 @@
 <html>
    <head>
       <title>my test page</title>
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <meta name="description" content="Test  page">
 
       <script type="text/javascript">
          <!--
             function getValue(){
-               var retVal = prompt("Enter your name : ", "your name here");
-               document.write("You have entered : " + retVal);
+               //var retVal = prompt("Enter your lucky digit : ", "your digit here");
+               //retVal = parseInt(retVal, 10);
+               //if (isNaN(retVal)) {
+               //    retVal = prompt("Please, enter a NUMBER!", "");
+               //}                   
+               do {
+                  var retVal = prompt("Enter your lucky digit : ", "your digit here");
+                  retVal = parseInt(retVal, 10);  
+               } while (isNaN(retVal));
+                 
+               //document.write("You have entered : " + retVal);
+               document.write("You have entered : " + "<strong>" + retVal + "</strong>");
+               document.write("<p> </p>");
+               document.write("<p> </p>");
+               document.write('<br>');
+
+               if (retVal < 1 || retVal > 9) {
+                   document.write("Your enter is not <strong> digit </strong>!");
+                   } else if (retVal == 7) {
+                        document.write("Your lucky digit <strong> 7 </strong>as mine too!");
+                        document.write("<p> </p>");
+                        document.write('<br> <br>');
+                        document.write("<strong> Good luck!!! </strong>");
+                   } else {
+                   document.write("<strong> Don\'t regret!!! </strong>");
+               }
+               
             }
          //-->
       </script>
       
    </head>
 
-   <body>
+ <body>
 
      <table width="100%" height="30" border=2 cellspacing=0 cellpadding=4 >
         <thead>
@@ -27,7 +52,7 @@
         <tbody>
             <tr>
                <td> Ivan </td>
-               <td> Ivanov </td>
+               <td> Ivanovovich </td>
             </tr>
         </tbody>
      </table>
@@ -46,4 +71,5 @@
 
    </body>
 </html>
+
 
